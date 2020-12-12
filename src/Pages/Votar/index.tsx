@@ -78,7 +78,7 @@ import React, {
               <div>
                 <span>Bem-vindo,</span>
                 <Link to="/profile">
-                  
+                  {user.nome}
                 </Link>
               </div>
             </Profile>

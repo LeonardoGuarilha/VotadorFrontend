@@ -78,20 +78,16 @@ import React, {
               <div>
                 <span>Bem-vindo,</span>
                 <Link to="/profile">
-                  {user.nome}
+                  
                 </Link>
               </div>
             </Profile>
-  
-            <button type="button" onClick={() => {}}>
-              <FiPower />
-            </button>
           </HeaderContent>
         </Header>
   
         <Main>
         <Form ref={formRef} onSubmit={handleSubmit}>
-          <span>Resposta</span>
+          <span>Comentário</span>
           <Textarea name="comentario" placeholder="Comentário..." />
           <input onChange={handleGostei} type="checkbox" name="curti" id="curti" />
           <label htmlFor="curti">Gostei</label>

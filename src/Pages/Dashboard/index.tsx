@@ -55,7 +55,6 @@ const Dashboard: React.FC = () => {
       </Header>
 
       <Content>
-        
         <Schedule>
           <Link to="criarrecurso">Criar recurso</Link>
           <Section>

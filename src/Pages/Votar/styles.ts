@@ -27,13 +27,7 @@ export const Profile = styled.div`
   align-items: center;
   margin-left: 80px;
   max-width: 1100px;
-
-  img {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-  }
-
+  
   div {
     display: flex;
     flex-direction: column;
@@ -61,22 +55,11 @@ export const Main = styled.main`
   max-width: 600px;
   margin: 0 auto;
 
-  select {
-    background: transparent;
-    flex: 1;
-    border: 0;
-    color: #f4ede8;
-    background: #232129;
-    border-radius: 10px;
-    padding: 16px;
-    width: 100%;
+ label {
+   margin-left: 10px;
+ }
 
-    border: 2px solid #232129;
-    color: #666360;
-
-    display: flex;
-    align-items: center;
-
-    margin-top: 10px;
-  }
+ input {
+   margin-top: 20px;
+ }
 `;

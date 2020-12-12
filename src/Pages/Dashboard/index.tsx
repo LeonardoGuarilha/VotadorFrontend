@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import 'react-day-picker/lib/style.css'; // vem padrão com o day-picker
-import { FiPower } from 'react-icons/fi';
 
 import { Link } from 'react-router-dom';
 import {
@@ -26,7 +25,7 @@ interface Recursos {
 const Dashboard: React.FC = () => {
   const[recurso, setRecursos] = useState<Recursos[]>([]);
 
-  const { user, signOut } = useAuth();
+  const { user } = useAuth();
 
   useEffect(() => {
     api.get('v1/recursos/contador').then((response) => {
@@ -47,10 +46,6 @@ const Dashboard: React.FC = () => {
               </Link>
             </div>
           </Profile>
-
-          <button type="button" onClick={signOut}>
-            <FiPower />
-          </button>
         </HeaderContent>
       </Header>
 
